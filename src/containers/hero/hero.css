@@ -1,0 +1,161 @@
+.hero{
+    display: flex;
+    
+}
+
+.hero_content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+    margin-right: 2.8rem;
+}
+
+.hero_content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 3.1rem;
+    line-height: 70px;
+    letter-spacing: -1px;
+
+}
+
+.hero_content p{
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+.hero_input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.hero_input input{
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid var(--color-footer);
+    font-family: var(--font-family);
+    font-size: 20px;
+    padding: 0 1rem;
+    outline: none;
+
+    color: #fff;
+    background: var(--color-footer);
+}
+.hero_input button{
+    flex: 0.5;
+    padding: 0.2rem 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: orangered; 
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.hero_userProfiles{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.hero_userProfiles P{
+ margin: 0 0 0 1rem;
+ font-size: 14px;
+ font-weight: 500;
+ font-family: var(--font-family);
+
+ line-height: 38px;
+}
+
+.hero_image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_image img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero_content{
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hero_content h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .hero_content p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .hero_content{
+        margin: 0 0 2rem;
+        padding: 2rem;
+    }
+
+    .hero_userProfiles{
+        flex-direction: column;
+    }
+
+    .hero_userProfiles p{
+        margin: .2rem 0  0;
+    }
+
+    .hero_input input,
+    .hero_input button{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .hero_content{
+        margin: 0 0 1rem;
+        padding: 1rem;
+    }
+
+    .hero_content h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero_content p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .hero_input input,
+    .hero_input button{
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
