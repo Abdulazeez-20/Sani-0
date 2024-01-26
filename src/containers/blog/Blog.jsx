@@ -5,7 +5,7 @@ import { blog01, blog02, blog03, blog04, blog05 } from "./imports"
 
 const Blog = () => {
   return (
-    <div className='blog section_padding'>
+    <div className='blog section_padding' id="blog">
       <div className="blog_heading">
         <h1 className='gradient_text'>A lot is happening, We are blogging about it</h1>
       </div>
